@@ -25,6 +25,9 @@ Configure automatic scanner discovery and IPP Everywhere driverless scanning.
 
 ## Requirements
 
+* Scanner discovery requires that scanner is connected via the local network,
+  and _not_ via USB connection to the host machine.
+
 * Scanner discovery requires that scanner reside on the _same IP subnet_ as the
   host machine.
 
