@@ -1,0 +1,3 @@
+- name: "Install system scan client"
+  ansible.builtin.include_tasks: scan_client/main.yml
+

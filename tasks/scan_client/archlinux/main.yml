@@ -1,0 +1,9 @@
+- name: "Install the 'sane-airscan' scan-client package"
+  # See https://wiki.archlinux.org/title/SANE#Installation for troubleshooting,
+  # if scanner is not recognized with 'scanimage -L' command
+  community.general.pacman:
+    name: sane-airscan
+    state: present
+  become: true
+  become_user: root
+
