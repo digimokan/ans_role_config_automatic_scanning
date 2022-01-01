@@ -12,6 +12,7 @@ Configure automatic scanner discovery and IPP Everywhere driverless scanning.
 * [Supported Operating Systems](#supported-operating-systems)
 * [Quick Start](#quick-start)
     * [Use From Playbook](#use-from-playbook)
+* [Role Dependencies](#role-dependencies)
 * [Contributing](#contributing)
 
 ## Purpose
@@ -81,6 +82,10 @@ Configure automatic scanner discovery and IPP Everywhere driverless scanning.
          ansible.builtin.include_role:
            name: ans_role_config_automatic_scanning
    ```
+
+## Role Dependencies
+
+* [ans_role_config_avahi](https://github.com/digimokan/ans_role_config_avahi)
 
 ## Contributing
 
