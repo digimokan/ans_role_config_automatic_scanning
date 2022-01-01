@@ -49,6 +49,7 @@ Configure automatic scanner discovery and IPP Everywhere driverless scanning.
 ## Supported Operating Systems
 
 * Arch Linux.
+* FreeBSD.
 
 ## Quick Start
 
