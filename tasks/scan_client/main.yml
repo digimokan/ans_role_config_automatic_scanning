@@ -1,4 +1,14 @@
-- name: "Install scan client for Arch Linux"
-  ansible.builtin.include_tasks: archlinux/main.yml
-  when: ansible_os_family == "Archlinux"
+# Arch Linux:
+#   - If scanner is not recognized with 'scanimage -L' command,
+#   - see https://wiki.archlinux.org/title/SANE#Installation for troubleshooting.
+
+# FreeBSD:
+#   - see pkg-message in https://www.freshports.org/graphics/sane-airscan/
+
+- name: "Install the 'sane-airscan' scan-client package"
+  ansible.builtin.package:
+    name: sane-airscan
+    state: present
+  become: true
+  become_user: root
 
