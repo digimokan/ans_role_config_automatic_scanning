@@ -1,2 +1,4 @@
 - src: https://github.com/digimokan/ans_role_config_avahi
+  vars:
+    enable_host_discovery_service: true
 

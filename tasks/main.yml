@@ -1,9 +1,9 @@
 - name: "Install system scan client"
   ansible.builtin.include_tasks: scan_client/main.yml
 
-- name: "Install and configure Avahi"
-  ansible.builtin.include_role:
-    name: ans_role_config_avahi
-  vars:
-    enable_host_discovery_service: true
+# - name: "Install and configure Avahi"
+#   ansible.builtin.include_role:
+#     name: ans_role_config_avahi
+#   vars:
+#     enable_host_discovery_service: true
 
