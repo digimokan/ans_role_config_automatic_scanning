@@ -81,11 +81,17 @@ Configure automatic scanner discovery and IPP Everywhere driverless scanning.
        - name: "Configure automatic scanner discovery and driverless scanning"
          ansible.builtin.include_role:
            name: ans_role_config_automatic_scanning
+         vars:
+           notify_avahi_handler_on_auto_printing_change: "an_avahi_role_handler_listener"
    ```
 
 ## Role Dependencies
 
-* [ans_role_config_avahi](https://github.com/digimokan/ans_role_config_avahi)
+* This role requires the Avahi host discovery service.
+* See [ans_role_config_avahi](https://github.com/digimokan/ans_role_config_avahi)
+  for configuration details.
+* Also see [dependencies.yml](../defaults/main/dependencies.yml) for options
+  to notify an external Avahi role on change.
 
 ## Contributing
 

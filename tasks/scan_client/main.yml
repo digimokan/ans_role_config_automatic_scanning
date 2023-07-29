@@ -11,4 +11,5 @@
     state: present
   become: true
   become_user: root
+  notify: "{{ notify_avahi_handler_on_auto_printing_change }}"
 
